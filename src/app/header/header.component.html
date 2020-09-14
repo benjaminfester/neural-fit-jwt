@@ -1,0 +1,31 @@
+<nav class="navbar navbar-dark navbar-expand-lg bg-dark sticky-top">
+    <div class="container">
+      <a routerLink="/" class="navbar-brand" routerLinkActive="active" >NEURALfit</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          
+          <li class="nav-item">
+            <a routerLink="/auth/login" *ngIf="!auth.isAuthenticated()" class="nav-link" routerLinkActive="active">
+              Login
+            </a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="/auth/register" *ngIf="!auth.isAuthenticated()" class="nav-link" routerLinkActive="active">
+              Register
+            </a>
+          </li>
+        
+          <li class="nav-item" >
+            <a class="nav-link" routerLink="/profile" *ngIf="auth.isAuthenticated()">
+              Profile
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pointer" *ngIf="auth.isAuthenticated()" (click)="logout()">
+                Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
