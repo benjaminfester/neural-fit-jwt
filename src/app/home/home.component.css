@@ -1,3 +1,50 @@
-p {
+p, h3 {
     font-weight: 200;
+}
+
+.banner {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('../../assets/tailor.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: .9;
+  }
+
+.row {
+    font-weight: 200;
+}
+
+a {
+    font-weight: 200;
+}
+
+.parallax1 {
+    background-image: url('../../assets/neural1.jpeg');
+    filter: grayscale(90%);
+
+  /* Set a specific height */
+    min-height: 200px; 
+
+  /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.parallax2 {
+    background-image: url('../../assets/neural2.jpeg');
+    filter: grayscale(90%);
+
+  /* Set a specific height */
+    min-height: 200px; 
+
+  /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
