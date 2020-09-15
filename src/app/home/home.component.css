@@ -40,7 +40,7 @@ a {
 }
 
 .parallax2 {
-    background-image: url('../../assets/neural1.jpeg');
+    background-image: url('../../assets/neural2.jpeg');
     filter: grayscale(90%);
 
   /* Set a specific height */
@@ -55,7 +55,7 @@ a {
 
 
 .parallax3 {
-    background-image: url('../../assets/neural2.jpeg');
+    background-image: url('../../assets/neural1.jpeg');
     filter: grayscale(90%);
 
   /* Set a specific height */
@@ -66,4 +66,27 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.endcol1, .endcol2, .endcol3, .endcol4 {
+  margin: 2rem;
+  height: 15rem;
+}
+
+.endcol1 {
+  background-image: url('../../assets/suit1.jpeg');
+  background-size: cover;
+}
+.endcol2 {
+  background-image: url('../../assets/fab1.jpeg');
+  background-size: cover;
+}
+.endcol3 {
+  background-image: url('../../assets/fab2.jpeg');
+  background-size: cover;
+}
+
+.endcol4 {
+  background-image: url('../../assets/suit4.jpeg');
+  background-size: cover;
 }

@@ -12,6 +12,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { FooterComponent } from './footer/footer.component';
 
 import { AuthModule } from './auth/auth.module';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -21,6 +23,8 @@ import { AuthModule } from './auth/auth.module';
     HeaderComponent,
     ProfileComponent,
     FooterComponent,
+    AboutComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
