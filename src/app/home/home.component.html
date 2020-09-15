@@ -1,8 +1,7 @@
 <div *ngIf="notify" class="alert alert-success container marge rounded-0">
     {{ notify }}
 </div>
-
-<header class="banner">
+<!-- <header class="banner">
   <div class="container h-100">
     <div class="row h-100 align-items-center">
       <div class="col-12 text-right">
@@ -11,12 +10,23 @@
       </div>
     </div>
   </div>
-</header>
+</header> -->
 
-<div class="parallax1"></div>
+<div class="parallax1 animate__animated animate__fadeIn">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12 text-right">
+
+        <h1 class="font-weight-light animate__animated animate__fadeInRight animate__slower">NEURALfit</h1>
+        <p class="lead animate__animated animate__fadeInLeft animate__slow">Custom tailored outfits</p>
+      </div>
+    </div>
+  </div>
+  
+</div>
 
 
-  <div class="container mb-5 mt-5">
+  <div class="container mt-5">
     
     <div class="row justify-content-center">
       <div class="col">
@@ -28,27 +38,43 @@
   </div>
   
     
-  <div class="container mb-5">
-    
+  <div class="container mb-5 mt-5">
     <div class="row justify-content-center">
-      <div class="col">
+      <div data-aos="fade-right" class="col">
         <div class="card rounded-0" style="width: 32rem;">
           <img class="card-img-top" src="../../assets/textile.jpeg" alt="Card image cap">
+          
           <div class="card-body">
-            <p class="card-text">Upload a picture of yourself and easily get the measurements you need for a custom tailored suit</p>
-            <a href="#" class="btn btn-outline-primary rounded-0">Learn More</a>
+            <div class="text-center mb-3">
+              <h5 class="card-title">Upload an image</h5>
+            </div>
+            
+            <hr class="ml-5 mr-5">
+            
+            <p class="card-text ml-5 mr-5">Upload a picture of yourself and easily get the measurements you need for a custom tailored suit</p>
+            <div class="text-center mb-3">
+              <a href="#" class="btn btn-outline-primary rounded-0">Learn More</a>
+            </div>
           </div>
 
         </div>
         
       </div>
-      <div class="col">
+      <div data-aos="fade-left" class="col">
         <div class="card rounded-0" style="width: 32rem;">
           <img class="card-img-top" src="./../assets/tailor1.jpeg" alt="Card image cap">
           <div class="card-body">
+            <div class="text-center mb-3">
+              <h5 class="card-title">Choose your style</h5>
+            </div>
             
-            <p class="card-text">Pick your own fabric, patterns and quality to get exactly the outfit you want</p>
-            <a href="#" class="btn btn-outline-primary rounded-0">Learn More</a>
+            <hr class="ml-5 mr-5">
+            
+            <p class="card-text ml-5 mr-5">Pick your own fabric, patterns and quality to get exactly the outfit you want</p>
+            <div class="text-center mb-3">
+              <a href="#" class="btn btn-outline-primary rounded-0">Learn More</a>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -57,7 +83,7 @@
   </div>
 
 
-  <div class="parallax2"></div>
+  <div class="parallax3"></div>
 
   <div style="height:500px;">
     <p>Insert awesome marketing shit here</p>

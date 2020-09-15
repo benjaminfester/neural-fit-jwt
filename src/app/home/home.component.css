@@ -1,8 +1,27 @@
-p, h3 {
+p, h3, h5 {
     font-weight: 200;
 }
 
-.banner {
+.parallax1 {
+  background-image: url('../../assets/tailor.jpg');
+  filter: grayscale(90%);
+  height: 100vh;
+  
+  min-height: 500px;
+  opacity: .9;
+  color: white;
+
+/* Set a specific height */
+  min-height: 100vh; 
+
+/* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* .banner {
     height: 100vh;
     min-height: 500px;
     background-image: url('../../assets/tailor.jpg');
@@ -10,7 +29,7 @@ p, h3 {
     background-position: center;
     background-repeat: no-repeat;
     opacity: .9;
-  }
+  } */
 
 .row {
     font-weight: 200;
@@ -20,7 +39,7 @@ a {
     font-weight: 200;
 }
 
-.parallax1 {
+.parallax2 {
     background-image: url('../../assets/neural1.jpeg');
     filter: grayscale(90%);
 
@@ -35,7 +54,7 @@ a {
 }
 
 
-.parallax2 {
+.parallax3 {
     background-image: url('../../assets/neural2.jpeg');
     filter: grayscale(90%);
 
