@@ -1,5 +1,12 @@
-p, h3, h5 {
+h1, p, h3, h5 {
     font-weight: 200;
+}
+
+.alert-box {
+  
+  filter: grayscale(0%);
+  font-weight: 200;
+  
 }
 
 .parallax1 {
@@ -8,7 +15,7 @@ p, h3, h5 {
   height: 100vh;
   
   min-height: 500px;
-  opacity: .9;
+  opacity: 1;
   color: white;
 
 /* Set a specific height */
@@ -21,15 +28,9 @@ p, h3, h5 {
   background-size: cover;
 }
 
-/* .banner {
-    height: 100vh;
-    min-height: 500px;
-    background-image: url('../../assets/tailor.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: .9;
-  } */
+.tonedown {
+  filter: grayscale(99%);
+}
 
 .row {
     font-weight: 200;
@@ -51,6 +52,10 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.tonedown {
+  filter: grayscale(50%);
 }
 
 
@@ -89,4 +94,5 @@ a {
 .endcol4 {
   background-image: url('../../assets/suit4.jpeg');
   background-size: cover;
+  filter: grayscale(50%)
 }

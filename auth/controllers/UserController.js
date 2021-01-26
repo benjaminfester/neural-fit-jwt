@@ -2,6 +2,8 @@ const User = require('../models/User')
 const env = require('../DB')
 const jwt = require('jsonwebtoken')
 
+
+
 exports.register = (req, res) => {
     const { username, email, password, passwordConfirmation } = req.body
     if (!email || !password) {

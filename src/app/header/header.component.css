@@ -1,7 +1,12 @@
+
 a {
     font-weight: 200;
 }
 
 .pointer {
     cursor: pointer;
-  }
+}
+
+.navbar {
+    height: 4rem;
+}

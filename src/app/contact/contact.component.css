@@ -1,0 +1,40 @@
+h1 {
+    font-weight: 200;
+}
+
+.parallax {
+    background-image: url('../../assets/tailor2.jpeg');
+    opacity: .9;
+
+  /* Set a specific height */
+    min-height: 800px; 
+
+  /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h4, h3 {
+    font-weight: 200;
+    color: white;
+}
+
+button {
+    font-weight: 200;
+}
+
+label {
+    font-weight: 200;
+}
+
+input {
+    font-weight: 200;
+}
+
+ul {
+    font-weight: 200;
+}
+
+

@@ -1,4 +1,12 @@
 <div class="container">
-    <h1 class="display-4">Welcome,</h1>
+    <div class="row mt-3 mb-3"></div>
+    <h1 class="display-4">Welcome, {{ auth.getUsername() }}!</h1>
     <p class="lead">{{ auth.getUsername() }}</p>
+
+    <div class="container mt-3 mb-3">
+        <input #fileInput type="file">
+        <button>
+            Upload Image
+        </button>
+    </div>
 </div>

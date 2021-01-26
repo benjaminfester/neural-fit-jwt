@@ -2,8 +2,6 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 const bcrypt = require('bcryptjs')
 
-
-
 const userSchema = new Schema({
   username: {
     type: String,
@@ -29,6 +27,11 @@ const userSchema = new Schema({
     type: String,
     min: [4, 'Too short, min 4 characters are required'],
     max: [32, 'Too long, max 16 characters are required']
+  },
+  userImage: {
+    id: String,
+    imageUrl: String,
+    uploaded: { type: Date, default: Date.now }
   }
 }, { timestamps: true });
 

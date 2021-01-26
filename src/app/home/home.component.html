@@ -1,29 +1,38 @@
-<div *ngIf="notify" class="alert alert-success container marge rounded-0">
-    {{ notify }}
-</div>
-<!-- <header class="banner">
-  <div class="container h-100">
-    <div class="row h-100 align-items-center">
-      <div class="col-12 text-right">
-        <h1 class="font-weight-light">NEURALfit</h1>
-        <p class="lead">Custom tailored outfits</p>
-      </div>
-    </div>
-  </div>
-</header> -->
 
 <div class="parallax1 animate__animated animate__fadeIn">
+  
   <div class="container h-100">
+    <div *ngIf="notify" class="alert-box alert alert-success container marge rounded-0">
+      {{ notify }}
+  </div>
     <div class="row h-100 align-items-center">
+      
       <div class="col-12 text-right">
 
-        <h1 class="font-weight-light animate__animated animate__fadeInRight">NEURALfit</h1>
+        <h1 class="display-1 animate__animated animate__fadeInRight">NEURALfit</h1>
         <p class="lead animate__animated animate__fadeInLeft">Custom tailored outfits</p>
       </div>
     </div>
   </div>
   
 </div>
+
+
+<div data-aos="fade-in" class="container mt-5 mb-5">
+  
+  <div class="row justify-content-center">
+    <div class="col text-center">
+      <h1 class="lead">Easily get your measurements by only providing us with an image of yourself and your height</h1>
+
+      <img src="../../assets/model.gif" alt="model">
+    </div>
+
+  </div>
+
+</div>
+
+
+<div data-aos="fade-in" class="parallax2"></div>
 
 
 
@@ -43,7 +52,7 @@
     <div class="row justify-content-center">
       <div data-aos="fade-right" class="col">
         <div class="card rounded-0" style="width: 32rem;">
-          <img class="card-img-top" src="../../assets/textile.jpeg" alt="Card image cap">
+          <img class="tonedown card-img-top" src="../../assets/textile.jpeg" alt="card">
           
           <div class="card-body">
             <div class="text-center mb-3">
@@ -63,7 +72,7 @@
       </div>
       <div data-aos="fade-left" class="col">
         <div class="card rounded-0" style="width: 32rem;">
-          <img class="card-img-top" src="./../assets/tailor1.jpeg" alt="Card image cap">
+          <img class="tonedown card-img-top" src="./../assets/tailor1.jpeg" alt="Card image cap">
           <div class="card-body">
             <div class="text-center mb-3">
               <h5 class="card-title">Choose your style</h5>
@@ -84,7 +93,7 @@
   </div>
 
 
-  <div class="parallax3"></div>
+  <div data-aos="fade-in" class="parallax3"></div>
 
   <div class="container mb-5">
     <div class="text-center mt-5">

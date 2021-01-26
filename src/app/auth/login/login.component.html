@@ -4,13 +4,13 @@
         <div class="card-header rounded-0 text-light bg-dark ">
             <h3 class="lead mt-3">Log In</h3> 
         </div>
-        <div class="content-section mb-3">
+        <div class="content-section mb-3 mt-3">
             <form [formGroup]="loginForm" (ngSubmit) = "login()">
                 <div class="form-group mt-1 ml-3 mr-3">
                   <div *ngIf="notify" class="alert alert-success rounded-0 mt-3">
                     {{ notify }}
                   </div>
-                  <div id="alert-box" *ngIf="errors.length > 0" class="alert alert-danger rounded-0 mt-3">
+                  <div *ngIf="errors.length > 0" class="alert alert-danger rounded-0 mt-3">
                     <p *ngFor = "let error of errors">
                         {{ error }}
                     </p>
@@ -21,12 +21,12 @@
                          formControlName="email">
                 </div>
                 <div *ngIf="isValidInput('email')"
-                  class="alert alert-danger rounded-0 ml-3 mr-3">
+                id="alert-box" class="alert alert-danger rounded-0 ml-3 mr-3">
                   <div *ngIf="loginForm.controls['email'].errors.required">
-                    Email is required.
+                    <p>Email is required</p>
                   </div>
-                  <div *ngIf="loginForm.controls['email'].errors.pattern">
-                    Must be a valid email format.
+                  <div id="alert-box" *ngIf="loginForm.controls['email'].errors.pattern">
+                    <p>Must be a valid email format</p>
                   </div>
                 </div>
       
@@ -37,9 +37,9 @@
                          formControlName ="password">
                 </div>
                 <div *ngIf="isValidInput('password')"
-                  class="alert alert-danger rounded-0 ml-3 mr-3">
+                id="alert-box" class="alert alert-danger rounded-0 ml-3 mr-3">
                   <div *ngIf="loginForm.controls['password'].errors.required">
-                    Password is required.
+                    Password is required
                   </div>
                 </div>
                 <button
@@ -54,4 +54,16 @@
         
       </div>
     </div>
+</div>
+
+<div class="row mt-5 mb-5">
+  <div class="row mt-5 mb-5">
+    <div class="row mt-5 mb-5">
+      <div class="row mt-5 mb-5">
+      
+      </div>
+      
+    </div>
+
+  </div>
 </div>

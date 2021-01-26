@@ -1,5 +1,6 @@
 const express = require('express')
 const user = require('../controllers/UserController')
+var multer  = require('multer');
 const router = express.Router()
 
 const { authMiddleware } = require('../controllers/UserController')

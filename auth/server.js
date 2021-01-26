@@ -14,7 +14,7 @@ mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
 
 mongoose.connect(config.DB).then(
-    () => { console.log('Connected to mongodb') },
+    () => { console.log('Connected to MongoDB') },
     err => { console.log('Database connection error occurred' + err) }
   );
 
@@ -36,5 +36,5 @@ app.get('/', function (req, res) {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server is running on PORT ${PORT}`);
+  console.log(`Server is running on port ${PORT}..`);
 });

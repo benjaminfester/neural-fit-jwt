@@ -4,7 +4,7 @@
       <div class="card-header text-light bg-dark rounded-0">
         <h3 class="lead mt-3">User Registration</h3>
       </div>
-      <div class="content-section mb-3">
+      <div class="content-section mb-3 mt-3">
         <form #registerForm="ngForm">
           <div class="form-group mt-1 ml-3 mr-3">
             <div id="alert-box" *ngIf="errors.length > 0" class="alert alert-danger rounded-0 mt-3">
@@ -21,7 +21,7 @@
                    required>
           </div>
           <div *ngIf="username.invalid && (username.dirty || username.touched)"
-            class="alert alert-danger ml-3 mr-3 rounded-0">
+          id="alert-box" class="alert alert-danger ml-3 mr-3 rounded-0">
             <div *ngIf="username.errors.required">
               Username is required
             </div>
@@ -37,7 +37,7 @@
                    required>
           </div>
           <div *ngIf="email.invalid && (email.dirty || email.touched)"
-            class="alert alert-danger ml-3 mr-3 rounded-0">
+          id="alert-box" class="alert alert-danger ml-3 mr-3 rounded-0">
             <div *ngIf="email.errors.required">
               Email is required
             </div>
@@ -53,7 +53,7 @@
                    required>
           </div>
           <div *ngIf="password.invalid && (password.dirty || password.touched)"
-            class="alert alert-danger ml-3 mr-3 rounded-0">
+          id="alert-box" class="alert alert-danger ml-3 mr-3 rounded-0">
             <div *ngIf="password.errors.required">
               Password is required
             </div>
@@ -82,5 +82,14 @@
         </form>
       </div>
     </div>
+  </div>
+</div>
+
+<div class="row mb-5">
+  <div class="row mb-5">
+    <div class="row mb-5">
+      
+    </div>
+
   </div>
 </div>
